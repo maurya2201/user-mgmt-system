@@ -1,5 +1,7 @@
 const users = JSON.parse(localStorage.getItem("users"));
 const form = document.querySelector("form");
+localStorage.setItem("adminState",false);
+localStorage.setItem("userLogin",false);
 form.addEventListener("submit",(event)=>{
   event.preventDefault();
   const email = form[0].value;
