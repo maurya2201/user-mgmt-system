@@ -1,0 +1,29 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgray;
+}
+form{
+  margin-top: 120px;
+  background-color:skyblue;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:2px solid rgb(0, 0, 0,0.2);
+  border-radius: 50px;
+}
+input{
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+#btn{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}

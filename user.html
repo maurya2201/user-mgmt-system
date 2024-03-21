@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Page</title>
+  <link rel="stylesheet" href="user.css">
+  <script>
+  const val = localStorage.getItem(`userLogin`);
+  if(val==="false"){
+    window.location.href="login.html";
+  }
+  </script>
+  <script defer src="user.js"></script>
+</head>
+<body>
+  <header>
+    <ul>
+    <li>
+    <a href="user.html">Home</a>
+    </li>
+    <li>
+    <button id="updateProfile">Update profile</button>
+    <button id="logout">Logout</button>
+    </li>
+    </ul>
+  </header>
+  <h1></h1>
+  <br>
+  <div class="user">
+  <form autocomplete="off">
+    <p style="font-size: 15px;">Update Profile</p>
+    <br>
+    <input type="text" placeholder="enter your name" required>
+    <br>
+    <input type="email" placeholder="enter your email" required>
+    <br>
+    <input type="password" placeholder="enter your password" required>
+    <br>
+    <input id="btn" type="submit">
+    <br>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+  display: flex;
+  width: 100%;
+  background-color:skyblue;
+  height: 50px;
+  flex-wrap: wrap;
+}
+header ul li{
+  margin-top: 15px;
+  padding-left: 50px;
+  display: inline-block;
+}
+header ul li a{
+  text-decoration: none;
+  color: black;
+}
+#logout{
+  background-color:skyblue;
+  border: 2px solid rgb(0, 0, 0.,0.2);
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+.btns{
+  background-color:skyblue;
+  border: 2px solid rgb(0, 0, 0.,0.2);
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+}
+table,tr,th,td{
+  border: 2px solid rgb(0, 0, 0,0.2);
+  border-collapse: collapse;
+}
+table{
+  width: 100%;
+  text-align: center;
+}
+th{
+  background-color: skyblue;
+  color: black;
+}
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+form{
+  padding: 20px;
+  display: none;
+  background-color:skyblue;
+  height: 220px;
+  width: 250px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+input{
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+#search{
+  background-color:white;
+  border: 2px solid black;
+  height: 35px;
+}

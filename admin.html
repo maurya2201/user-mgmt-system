@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin page</title>
+  <link rel="stylesheet" href="admin.css">
+  <script>
+  if(localStorage.getItem("adminState")==="false"){
+    window.location.href="login.html";
+  }
+  </script>
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <header>
+    <ul>
+    <li>
+    <a>Welcome Admin</a>
+    </li>
+    <li>
+    <a href="admin.html">Home</a>
+    </li>
+    <li>
+      <a href="adduser.html">Add user</a> 
+    </li>
+    <li>
+      <button id="logout">Logout</button>
+      </li>
+    </ul>
+  </header>
+  <br>
+  <center>
+  <input id="search" type="search">
+</center>
+  <table>
+    <thead>
+    <tr>
+  <th>Fullname</th>
+  <th>Email</th>
+  <th>Password</th>
+  <th>Update</th>
+  <th>Delete</th>
+</tr>
+</thead>
+<tbody>
+  
+</tbody>
+  </table>
+  <br>
+  <div class="user">
+    <form>
+      <p style="font-size: 15px;">Update Profile</p>
+      <br>
+      <input type="text" placeholder="enter your name" required>
+      <br>
+      <input type="email" placeholder="enter your email" required>
+      <br>
+      <input type="password" placeholder="enter your password" required>
+      <br>
+      <input id="btn" type="submit">
+      <br>
+      </form>
+    </div>
+</body>
+</html>
